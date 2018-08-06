@@ -1,0 +1,72 @@
+body{
+  margin: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar {
+  background-color: lightblue;
+  padding: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+}
+.navbar li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  font-family: 'Playfair Display SC', serif;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.navbar a:hover {
+  /* background-color: #005f5f; */
+  background-color: #8FB8BF;
+}
+
+.navbar a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.card {
+  padding: 40px;
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_image {
+  margin-right: 100px;
+}
+
+.profile_bio {
+  flex-grow: 1;
+}
+
+p {
+  font-size: 20px;
+}

@@ -1,0 +1,64 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-repeat: no-repeat;
+  background-size: left center;
+  background-size: cover;
+  margin: 0px;
+  text-align:center;
+  background-image: url("/images/clouds.jpeg")
+}
+
+#start {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.nav li {
+  font-size: 1.2em;
+  line-height: 20px;
+  height: 20px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    margin-right: -4px;
+  }
+
+.bottom {
+  position: absolute;
+  bottom: 350px;
+  left: 0px;
+  right:0px;
+}

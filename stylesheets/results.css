@@ -1,0 +1,152 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0px;
+  font-size: 20px;
+}
+
+p, h2, h3 {
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  margin: 50px;
+}
+
+#image_for_weather {
+  margin: 30px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#location {
+  padding: 30px;
+}
+
+#info_about_location {
+  padding: 50px;
+}
+
+.location_bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+  backgrond-color: #8FADAA;
+}
+
+.hotels_food {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#hotels {
+  width: 50%;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+#food {
+  width: 50%;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.activities_weather {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#activities {
+  width: 50%;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+#weather {
+  width: 50%;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: lightblue;
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+}
+
+.nav li {
+  /* font-family: 'Oswald', sans-serif; */
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  font-family: 'Playfair Display SC', serif;
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #8FB8BF;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.img_div {
+  display: block;
+  float: right;
+  border: 2px solid black;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    margin-right: -4px;
+  }

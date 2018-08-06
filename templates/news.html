@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="/stylesheets/news.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <title>Welcome Page</title>
+</head>
+
+
+<body id="newsbackground">
+    <div class="nav">
+       <ul>
+         <li class="home"><a href="/">Home</a></li>
+         <li class="blog"><a href="/blog">Blog</a></li>
+         <li class="news"><a href="/news">News</a></li>
+         <li class="about"><a href="/about">About</a></li>
+         <li class="contact"><a href="/contact">Contact</a></li>
+       </ul>
+     </div>
+  <h1 id="traveltitle">World News</h1>
+  {% for article in articles %}
+    <div id="newsbox">
+      <div id="left">
+        <a href = {{article["url"]}}>
+          <div id="title">{{article["title"]}}</div>
+        </a>
+      {% if article["author"] and not article["author"].startswith("http") %}
+        {{article["author"]}},
+      {% else %}
+
+      {% endif %}
+        <br><br>
+        <ul>
+        <li>{{article["description"]}}</li>
+        </ul>
+      </div>
+
+      <div id="space"> </div>
+      <div id="newsimage">
+        <img class="im" src= {{article["urlToImage"]}} alt="Smiley face" height="200"> <br>
+      </div>
+    </div> <br>
+  {% endfor %}
+</body>
